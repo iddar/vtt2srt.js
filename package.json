@@ -1,0 +1,37 @@
+{
+  "name": "vtt2srt",
+  "version": "1.0.0",
+  "description": "comver sub from vvt to srt",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r ts-node/register ./src/app.ts",
+    "start:watch": "nodemon",
+    "build": "tsc"
+  },
+  "author": "iddar <iddar@dbug.mx>",
+  "license": "MIT",
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts"
+  },
+  "dependencies": {
+    "n-readlines": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.12",
+    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.3",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
